@@ -11,6 +11,7 @@ int main()
 {
     system("cls");
     int input;
+    while(true){
     cout<<"--------------------------------------------------------------------------"<<endl;
     cout<<"                    CGPA Calculator              "<<endl;
     cout<<"--------------------------------------------------------------------------\n"<<endl;
@@ -40,9 +41,9 @@ int main()
                 break;
         default:
             cout<<"You have entered wrong input.Try again!\n"<<endl;
-            goto sub;
             break;
     }
+ }
 }
 
 void calculateGPA() {
@@ -145,7 +146,7 @@ void calculateCGPA() {
             calculateCGPA();
             break;
         } else if (inmenu == 2) {
-            return; // Return to main menu
+            return; 
         } else if (inmenu == 3) {
             exit(EXIT_SUCCESS);
         } else {
@@ -170,7 +171,7 @@ void method() {
         cin >> inmenu;
 
         if (inmenu == 1) {
-            return; // Return to main menu
+            return;
         } else if (inmenu == 2) {
             exit(EXIT_SUCCESS);
         } else {
@@ -178,4 +179,5 @@ void method() {
         }
     }
 }
+
 
